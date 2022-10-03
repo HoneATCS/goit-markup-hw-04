@@ -537,3 +537,26 @@ margin-top: 20px;
 
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+} 
+.icon-envelope::before{
+  content: "";
+  width: 16;
+  height: 12;
+  background-image: url(.../images/SVG/envelope.svg);
+  background-size: cover;
+}
+.icon-Vector-1 ::before{
+  content: "";
+  width: 10em;
+  height: 16em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
