@@ -30,16 +30,20 @@
           </ul>
         </nav>
         <ul class="contacts-list-h">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link-mail"
-              >info@devstudio.com
-              <svg class="icon icon-envelope"><use xlink:href="./images/symbol-defs.svg#icon-envelope"></use></svg>
+          <li class="letter-telefon">
+            <a href="mailto:info@devstudio.com" class="link-mail">
+              <svg class="icon letter" width="16" height="12"><use href="./images/SVG/sprite.svg#letter">
+              </use>
+              </svg>
+              info@devstudio.com
             </a>
-            
           </li>
-          <li>
-            <a href="tel:+380961111111" class="linktel">+38 096 111 11 11
-              <svg class="icon icon-Vector-1"><use xlink:href="./images/symbol-defs.svg#icon-Vector-1"></use></svg>
+          <li class="letter-telefon">
+            <a href="tel:+380961111111" class="linktel">
+              <svg class="icon telefon" width="10" height="16">
+                <use href="./images/SVG/sprite.svg#telefon"></use>
+              </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -49,7 +53,7 @@
     <!--main-->
     <main class="main">
       <section class="bg-hero">
-        <div class="container">
+        <div class="container overlay">
           <h1 class="h-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button-primary">Замовити послугу</button>
         </div>
@@ -59,6 +63,11 @@
           <h2 class="visually-hidden">Наші особливості</h2>
           <ul class="skills">
             <li class="list-skills">
+              <div class="box">
+              <svg class="icon decr-1">
+              <use xlink:href="./images/SVG#icon-Group"></use>
+              </svg>
+              </div>
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="skil">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -66,6 +75,11 @@
               </p>
             </li>
             <li class="list-skills">
+              <div class="box">
+                <svg class="icon clock-1">
+                  <use xlink:href="./images/SVG#icon-clock-1"></use>
+                </svg>
+              </div>
               <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="skil">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -73,12 +87,22 @@
               </p>
             </li>
             <li class="list-skills">
+              <div class="box">
+                <svg class="icon describe-3">
+                  <use xlink:href="#icon-diagram-1"></use>
+                </svg>
+              </div>
               <h3 class="title">ПЛАНУВАННЯ</h3>
               <p class="skil">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="list-skills">
+              <div class="box">
+                <svg class="icon astronaut-1">
+                  <use xlink:href="#icon-astronaut-1"></use>
+                </svg>
+              </div>
               <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="skil">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -109,17 +133,77 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="carts">
             <li class="person">
-              <img src="./images/Our-team-Demyanenko1.jpg" alt="на білому фоні чоловік в окулярах" width="270" height="260"/>
-              <div class="namec">
-                <h3 class="name">Ігор Дем'яненко</h3>
-                <p class="person-work">Product Designer</p>
-              </div>
+                <img src="./images/Our-team-Demyanenko1.jpg" alt="на білому фоні чоловік в окулярах" width="270" height="260"/>
+                <div class="namec">
+                  <h3 class="name">Ігор Дем'яненко</h3>
+                  <p class="person-work">Product Designer</p>
+                  <ul class="icons-cart-list">
+                    <li class="icon-listc">
+                      <a href="" class="icons-link">
+                        <svg class="icon instagram-2">
+                          <use xlink:href="./images/SVG#instagram-2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-listc">
+                      <a href="" class="icons-link">
+                        <svg class="icon tvit">
+                          <use xlink:href="./images/SVG#icon-tvit"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-listc">
+                      <a href="" class="icons-link">
+                        <svg class="icon f">
+                          <use xlink:href="./images/SVG#f"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-listc">
+                      <a href="" class="icons-link">
+                        <svg class="icon linkedin-1">
+                          <use xlink:href="./images/SVG#linkedin-1"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
             </li>
             <li class="person">
               <img src="./images/Our-team-Repina2.jpg" alt="жінка посміхається в костюмі та в окулярах" width="270" height="260"/>
              <div class="namec">
                 <h3 class="name">Ольга Рєпіна</h3>
                 <p class="person-work">Frontend Developer</p>
+                <ul class="icons-cart-list">
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon instagram-2">
+                        <use xlink:href="./images/SVG#instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon tvit">
+                        <use xlink:href="./images/SVG#icon-tvit"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon f">
+                        <use xlink:href="./images/SVG#f"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon linkedin-1">
+                        <use xlink:href="./images/SVG#linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
              </div>
             </li>
             <li class="person">
@@ -127,6 +211,36 @@
               <div class="namec">
                 <h3 class="name">Микола Тарасов</h3>
                 <p class="person-work">Marketing</p>
+                <ul class="icons-cart-list">
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon instagram-2">
+                        <use xlink:href="./images/SVG#instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon tvit">
+                        <use xlink:href="./images/SVG#icon-tvit"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon f">
+                        <use xlink:href="./images/SVG#f"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon linkedin-1">
+                        <use xlink:href="./images/SVG#linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="person">
@@ -134,7 +248,86 @@
               <div class="namec">
                 <h3 class="name">Михайло Єрмаков</h3>
                 <p class="person-work">UI Designer</p>
+                <ul class="icons-cart-list">
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon instagram-2">
+                        <use xlink:href="./images/SVG#instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon tvit">
+                        <use xlink:href="./images/SVG#icon-tvit"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon f">
+                        <use xlink:href="./images/SVG#f"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-listc">
+                    <a href="" class="icons-link">
+                      <svg class="icon linkedin-1">
+                        <use xlink:href="./images/SVG#linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="container">
+        <h2 class="clients-title">Постійні клієнти</h2>
+          <ul class="client-list">
+            <li class="client-item">
+              <a href="#" class="client-link">
+                <svg class="icon clients-1">
+                  <use xlink:href="./images/SVG#clients-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="#" class="client-link">
+                <svg class="icon clients-2">
+                  <use xlink:href="./images/SVG#clients-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="#" class="client-link">
+                <svg class="icon group-3">
+                  <use xlink:href="./images/SVG/sprite.svg#group-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="#" class="client-link">
+                <svg class="icon group-2">
+                  <use xlink:href="./images/SVG/sprite.svg#group-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="#" class="client-link">
+                <svg class="icon group-1">
+                  <use xlink:href="./images/SVG/sprite.svg#group-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="#" class="client-link">
+                <svg class="icon object-1">
+                  <use xlink:href="./images/SVG/sprite.svg#object-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -156,6 +349,40 @@
             </li>
           </ul>
         </address>
+<div class="footer-icons-link">
+  <p class="foter-link-title">ПРИЄДНУЙТЕСЬ</p>
+  <ul class="footer-link-list">
+  <li class="footer-link-item">
+    <a class="f-s-link" href="">
+    <svg class="icon icon-instagram-footer">
+      <use xlink:href="./images/SVG/sprite.svg#icon-instagram-footer"></use>
+    </svg>
+    </a>
+  </li>
+  <li class="footer-link-item">
+    <a class="f-s-link" href="">
+    <svg class="icon icon-tvit-footer">
+      <use xlink:href="./images/SVG/sprite.svg#icon-tvit-footer"></use>
+    </svg>
+    </a>
+  </li>
+  <li class="footer-link-item">
+    <a class="f-s-link" href="">
+    <svg class="icon icon-facebook-1">
+      <use xlink:href="./images/SVG/sprite.svg#icon-facebook-1"></use>
+    </svg>
+    </a>
+  </li>
+  <li class="footer-link-item">
+    <a class="f-s-link" href="">
+    <svg class="icon icon-linkedin-footer">
+      <use xlink:href="./images/SVG/sprite.svg#icon-linkedin-footer"></use>
+    </svg>
+    </a>
+  </li>
+</ul>
+</div>
+
       </div>
     </footer>
   </body>
