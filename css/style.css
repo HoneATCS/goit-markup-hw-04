@@ -20,9 +20,8 @@ body {
 }
 
 .logo:focus,
-.logo {
+.logo{
   color: var(--title-text-color);
-
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
@@ -308,7 +307,7 @@ padding-bottom: 30px;
   text-decoration: none;
 }
 
-.footer-adres {
+.footer-adres{
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -327,7 +326,7 @@ padding-bottom: 30px;
 }
 
 .footer-mail,
-.footer-tel {
+.footer-tel{
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -538,38 +537,45 @@ margin-top: 20px;
 }
 
 .icon {
-  margin-right: 10px;
+ 
   fill: currentColor;
   background-size: contain;
   flex-wrap: flex-wrap;
 } 
 
-.icon .letter{
+.icon-letter{
   display: flex;
-  background-image: url("../images/SVG/letter.svg");
+  margin-right: 10px;
+  background-image: url("../images/icon-letter.svg");
   background-size: contein;
   background-repeat: no-repeat;
   align-items: center;
-  
+  stroke: currentColor;
+  fill: currentColor;
 }
 
-.icon .letter:hover{
-color: var(--accent-color);
+.icon-letter:link:hover.icon{
+ color: var(--accent-color);
 }
 
-.icon .telefon{
-  background-image: url("../images/SVG/telefon.svg");
+.icon-telefon{
+  background-image: url("../images/icon-telefon.svg");
   stroke: currentColor;
   fill: currentColor;
   background-repeat: no-repeat;
   align-items: center;
+  background-size: contein;
+  margin-right: 10px;
+
 }
 
-.icon .telefon:hover{
+.icon-telefon:link:hover.icon{
   color: var(--accent-color);
 }
+/*our-describe*/
 
 .box{
+display: flex;
 margin-bottom: 30px;
 width: 270px;
 height: 120px;
@@ -577,52 +583,86 @@ color: #F5F4FA;
 border: 1px solid ;
 border: 4px;
 background-size:  border-box;
-background-position: center;
+align-items: center;
 
 } 
 
+.skills{
+  gap: 30px;
+  align-items: center;
+}
+
+.list-skills{
+display: block;
+justify-content: space-between;
+}
+
+.icon-decr-1{
+
+height: 70px;
+background-image: url("../images/icon-decr-1.svg");
+align-items: center;
+margin-top: 20px;
+}
+
 .box > .icon{
   background-repeat: no-repeat;
-  margin: 0;
   gap: 30px;
 }
 
-.icon .clock-1{
+.icon-clock-1{
 width: 65,32px;
 height: 70px;
-background-image: url("../images/SVG/decr-1.svg");
+background-image: url("../images/icon-clock-1.svg");
 cursor: pointer;
 fill: Solid #F5F4FA;
 }
 
-.icon .describe-3{
+.icon-describe-3{
 width: 65,32px;
 height: 70px;
-background-image: url("../images/SVG/clock-1.svg");
+background-image: url("../images/icon-describe-3.svg");
 cursor: pointer;
 fill: Solid #F5F4FA;
 }
+
+.icon-astronaut-1{
+  margin-top: 20px;
+  height: 70px;
+  background-image: url("../images/icon-astronaut-1.svg");
+  cursor: pointer;
+  fill: Solid #F5F4FA;
+}
+
 .person{
   box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+
 /* section bg-herro*/
 
 .overlay{
+display: flex;
 max-width: 1600px;
-height: 600px;
+
+padding-top: 200px;
+padding-bottom: 200px;
+
 margin-left: auto;
 min-height: auto;
-outline: 1px solid black;
-background-image: url(../images/hero.jpg);
+
+background-color: #C4C4C4;
+background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+
 background-size: cover;
 background-position: absolute;
 background-repeat: no-repeat;
+
 }
 
 /*Links for team*/
 .icons-cart-list{
- 
   display: flex;
   text-decoration: none;
   gap: 10px;
@@ -632,10 +672,44 @@ background-repeat: no-repeat;
 }
 
 .icon-listc{
-display: flex;
-fill: #AFB1B8;
+  display: flex;
+  fill: #AFB1B8;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.icons-link:hover,
+.icons-link:focus{
+  background-color: var(--accent-color);
+  color: #FFFFFF;
 }
 
+.icons-link:hover .icon-instagram-2,
+.icons-link:focus .icon-instagram-2{
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+}
+.icons-link:hover .icon-tvit,
+.icons-link:focus .icon-tvit {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+}
+
+.icons-link:hover .icon-f,
+.icons-link:focus .icon-f {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+}
+
+.icons-link:hover .icon-linkedin-1,
+.icons-link:focus .icon-linkedin-1 {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+}
 .namec{
   text-align: center;
 }
@@ -647,9 +721,49 @@ fill: #AFB1B8;
   height: 44px;
   border-radius: 50%;
 }
+
+.icon-instagram-2{
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon-instagram-2.svg");
+  cursor: pointer;
+  align-content: center;
+  vertical-align: middle;
+  color: #AFB1B8;
+}
+.icon-tvit{
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon-tvit.svg");
+  cursor: pointer;
+  align-content: center;
+  vertical-align: middle;
+  color: #AFB1B8;
+}
+.icon-f{
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon-f.svg");
+  cursor: pointer;
+  align-content: center;
+  vertical-align: middle;
+  color: #AFB1B8;
+}
+
+.icon-linkedin-1{
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon-linkedin-1.svg");
+  cursor: pointer;
+  align-content: center;
+  vertical-align: middle;
+  color: #AFB1B8;
+}
+
 /*client-list*/
 .clients{
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clients-title{
@@ -667,20 +781,33 @@ fill: #AFB1B8;
 .client-list{
   display: flex;
   gap: 30px;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.client-item:not(:last-child){
-  margin-right: 30px;
+.client-item:hover,
+.client-item:focus{
+  color: var(--accent-color);
 }
 
 .client-item{
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  margin: 0;
+  padding: 0;
   width: 170px;
   height: 92px;
+  margin-left: auto;
+  margin-right: auto;
   gap: 30px;
   color: #AFB1B8;
+  border: 1px solid;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .client-link{
@@ -689,40 +816,103 @@ fill: #AFB1B8;
   align-items: center;
   width: 106px;
   height: 60px;
-  border: 1px solid;
+  
   border-radius: 4px;
   color: #AFB1B8;
 }
 
-.client-link:hover,
-.client-link:focus{
-  color: var(--accent-color);
+
+.client-link:hover .icon-clients-1,
+.client-link:focus .icon-clients-1{
+  fill: var(--accent-color);
+}
+.client-link:hover .icon-clients-2,
+.client-link:focus .icon-clients-2 {
+  fill: var(--accent-color);
+}
+.client-link:hover .icon-group-3,
+.client-link:focus .icon-group-3 {
+  fill: var(--accent-color);
+}
+.client-link:hover .icon-group-2,
+.client-link:focus .icon-group-2 {
+  fill: var(--accent-color);
+}
+.client-link:hover .icon-group-1,
+.client-link:focus .icon-group-1 {
+  fill: var(--accent-color);
+}
+.client-link:hover .icon-object-1,
+.client-link:focus .icon-object-1 {
+  fill: var(--accent-color);
 }
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon{
-background-color: var(--text-color);
+.icon-clients-1{
+  width: 41px;
+  background-image: url("../images/icon-clients-1.svg");
+  cursor: pointer;
+  align-content: center;
+  vertical-align: middle;
+  fill: #AFB1B8;
+}
+.icon-clients-2{
+  width: 40px;
+  height: 52px;
+  background-image: url("../images/icon-clients-2.svg");
+  cursor: pointer;
+  color: #AFB1B8;
+}
+.icon-group-3{
+  width: 43,5px;
+  height: 41px;
+  background-image: url("../images/icon-group-3.svg");
+  cursor: pointer;
+  color: #AFB1B8;
+}
+.icon-group-2{
+  width: 106px;
+  height: 60px;
+  background-image: url("../images/icon-group-2.svg");
+  cursor: pointer;
+  fcolor: #AFB1B8;
+  align-items: center;
+  text-align: center;
+ 
 }
 
-.icon .clients-1,
-.icon .clients-2,
-.icon .group-3,
-.icon .group-2,
-.icon .group-1,
-.icon .object-1{
-fill: currentColor;
+.icon-group-1{
+  width: 62.54px;
+  height: 45.43px;
+  background-image: url("../images/icon-group-.svg");
+  cursor: pointer;
+color: #AFB1B8;
 }
+
+.icon-object-1{
+  width: 93.79px;
+  height: 43.93px;
+  background-image: url("../images/icon-object-1.svg");
+  cursor: pointer;
+  color: #AFB1B8;
+}
+
+
 /*footer-icons*/
-.footer{
-  display: flex;
-  
 
+
+.footer-fortwo{
+  display: flex;
+  align-items: baseline;
 }
+.conection{
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+
 .footer-icons-link{
-align-items: center;
-justify-content: center;
-display: flex;
-align-items: baseline;
+padding-left: 72px;
+align-items:baseline;
 }
 
 .foter-link-title{
@@ -741,19 +931,86 @@ text-align: center;
 }
 
 .footer-link-list{
-  display: block;
+  align: Left;
+  align: Top;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.f-s-link{
+.footer-link-item{
+  display: flex;
   width: 44px;
   height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  background-color: var(--primary-white-color);
-  display: flex;
   align-items: center;
   justify-content: center;
-  color: #AFB1B8;
+}
+
+.f-s-link{
+  display: flex;
+  width: 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill:  #AFB1B8;
+}
+.footer-link-item:hover{
+background-color: var(--accent-color);
+} 
+
+.icon-instagram-footer{
+ width: 20px;
+ height: 20px;
+background-image: url("../images/icon-instagram-footer.svg");
+cursor: pointer;
+fill: #F5F4FA;
+
+}
+
+.icon-tvit-footer{
+width: 20px;
+height: 16,5px;
+background-image: url("../images/icon-tvit-footer.svg");
+cursor: pointer;
+fill: #F5F4FA;
+
+}
+
+.icon-facebook-footer{
+background-image: url("../images/icon-facebook-footer.svg");
+height: 20px;
+fill: #F5F4FA;
+cursor: pointer;
+
+}
+
+.icon-linkedin-footer{
+background-image: url("../images/icon-linkedin-footer.svg");
+height: 20px;
+cursor: pointer;
+fill: #F5F4FA;
+width: 20px;
+
+}
+/*  Portfolio - 4 */
+ 
+/*Тінь кнопок*/
+
+.butone:hover,
+.but:hover{ 
+box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12), 2px 0px 1px rgba(0, 0, 0, 0.08), 1px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.item-carts:hover{
+  left: 215px;
+  top: 260px;
+  border: 1px solid #EEEEEE;
+  background: #FFFFFF;
+  box-shadow: inset 6px 1px 4px rgba(0, 0, 0, 0.16), 
+  4px 0px 4px rgba(0, 0, 0, 0.06),
+  1px 0px 1px rgba(0, 0, 0, 0.12);
 }
