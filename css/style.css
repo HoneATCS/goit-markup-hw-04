@@ -374,6 +374,7 @@ header > .container{
   padding-right: 15px;
   margin: 0 auto;
   align-items: center;
+  
   }
 
 .container{
@@ -381,6 +382,7 @@ header > .container{
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  
   }
 
 .link-s,
@@ -490,8 +492,8 @@ margin-bottom: 9px;
 .contacts-footer{
 gap: 9px;
 }
-
-address{
+ m
+ address{
 margin-top: 20px;
 }
 
@@ -546,20 +548,17 @@ margin-top: 20px;
 .icon-letter{
   display: flex;
   margin-right: 10px;
-  background-image: url("../images/icon-letter.svg");
-  background-size: contein;
+  background-image: url("./images/icon-letter");
+  background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
   stroke: currentColor;
   fill: currentColor;
-}
-
-.icon-letter:link:hover.icon{
- color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .icon-telefon{
-  background-image: url("../images/icon-telefon.svg");
+background-image: url("./images/icon-telefon");
   stroke: currentColor;
   fill: currentColor;
   background-repeat: no-repeat;
@@ -598,9 +597,8 @@ justify-content: space-between;
 }
 
 .icon-decr-1{
-
 height: 70px;
-background-image: url("../images/icon-decr-1.svg");
+background-image: url("./images/icon-decr-1.svg");
 align-items: center;
 margin-top: 20px;
 }
@@ -611,27 +609,27 @@ margin-top: 20px;
 }
 
 .icon-clock-1{
-width: 65,32px;
+width: 65px;
 height: 70px;
-background-image: url("../images/icon-clock-1.svg");
+background-image: url("./images/icon-clock-1.svg");
 cursor: pointer;
-fill: Solid #F5F4FA;
+fill: #F5F4FA;
 }
 
 .icon-describe-3{
-width: 65,32px;
+width: 65px;
 height: 70px;
-background-image: url("../images/icon-describe-3.svg");
+background-image: url("./images/icon-describe-3.svg");
 cursor: pointer;
-fill: Solid #F5F4FA;
+fill: #F5F4FA;
 }
 
 .icon-astronaut-1{
   margin-top: 20px;
   height: 70px;
-  background-image: url("../images/icon-astronaut-1.svg");
+  background-image: url("./images/icon-astronaut-1.svg");
   cursor: pointer;
-  fill: Solid #F5F4FA;
+  fill: #F5F4FA;
 }
 
 .person{
@@ -650,6 +648,7 @@ padding-top: 200px;
 padding-bottom: 200px;
 
 margin-left: auto;
+margin-right: auto;
 min-height: auto;
 
 background-color: #C4C4C4;
@@ -658,6 +657,7 @@ background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58
 background-size: cover;
 background-position: absolute;
 background-repeat: no-repeat;
+align-items: center;
 
 }
 
@@ -725,7 +725,7 @@ background-repeat: no-repeat;
 .icon-instagram-2{
   width: 20px;
   height: 20px;
-  background-image: url("../images/icon-instagram-2.svg");
+  background-image: url("./images/icon-instagram-2.svg");
   cursor: pointer;
   align-content: center;
   vertical-align: middle;
@@ -734,7 +734,7 @@ background-repeat: no-repeat;
 .icon-tvit{
   width: 20px;
   height: 20px;
-  background-image: url("../images/icon-tvit.svg");
+  background-image: url("./images/icon-tvit.svg");
   cursor: pointer;
   align-content: center;
   vertical-align: middle;
@@ -743,7 +743,7 @@ background-repeat: no-repeat;
 .icon-f{
   width: 20px;
   height: 20px;
-  background-image: url("../images/icon-f.svg");
+  background-image: url("./images/icon-f.svg");
   cursor: pointer;
   align-content: center;
   vertical-align: middle;
@@ -753,7 +753,7 @@ background-repeat: no-repeat;
 .icon-linkedin-1{
   width: 20px;
   height: 20px;
-  background-image: url("../images/icon-linkedin-1.svg");
+  background-image: url("./images/icon-linkedin-1.svg");
   cursor: pointer;
   align-content: center;
   vertical-align: middle;
@@ -849,7 +849,7 @@ background-repeat: no-repeat;
 
 .icon-clients-1{
   width: 41px;
-  background-image: url("../images/icon-clients-1.svg");
+  background-image: url("./images/icon-clients-1.svg");
   cursor: pointer;
   align-content: center;
   vertical-align: middle;
@@ -858,21 +858,21 @@ background-repeat: no-repeat;
 .icon-clients-2{
   width: 40px;
   height: 52px;
-  background-image: url("../images/icon-clients-2.svg");
+  background-image: url("./images/icon-clients-2.svg");
   cursor: pointer;
   color: #AFB1B8;
 }
 .icon-group-3{
   width: 43,5px;
   height: 41px;
-  background-image: url("../images/icon-group-3.svg");
+  background-image: url("./images/icon-group-3.svg");
   cursor: pointer;
   color: #AFB1B8;
 }
 .icon-group-2{
   width: 106px;
   height: 60px;
-  background-image: url("../images/icon-group-2.svg");
+  background-image: url("./images/icon-group-2.svg");
   cursor: pointer;
   fcolor: #AFB1B8;
   align-items: center;
@@ -883,7 +883,7 @@ background-repeat: no-repeat;
 .icon-group-1{
   width: 62.54px;
   height: 45.43px;
-  background-image: url("../images/icon-group-.svg");
+  background-image: url("./images/icon-group-.svg");
   cursor: pointer;
 color: #AFB1B8;
 }
@@ -891,7 +891,7 @@ color: #AFB1B8;
 .icon-object-1{
   width: 93.79px;
   height: 43.93px;
-  background-image: url("../images/icon-object-1.svg");
+  background-image: url("./images/icon-object-1.svg");
   cursor: pointer;
   color: #AFB1B8;
 }
