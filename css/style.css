@@ -539,38 +539,24 @@ margin-top: 20px;
 }
 
 .icon {
- 
   fill: currentColor;
   background-size: contain;
-  flex-wrap: flex-wrap;
 } 
 
-.icon-letter{
-  display: flex;
-  margin-right: 10px;
-  background-image: url("./images/icon-letter");
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  stroke: currentColor;
-  fill: currentColor;
+
+.link-mail > .icon-envelop{
+stroke: currentColor;
+fill: currentColor;
+background-repeat: no-repeat;
+align-items: center;
+margin-right: 10px;
+
+}
+
+.icon-smartphone:link:hover.icon{
   color: var(--accent-color);
 }
 
-.icon-telefon{
-background-image: url("./images/icon-telefon");
-  stroke: currentColor;
-  fill: currentColor;
-  background-repeat: no-repeat;
-  align-items: center;
-  background-size: contein;
-  margin-right: 10px;
-
-}
-
-.icon-telefon:link:hover.icon{
-  color: var(--accent-color);
-}
 /*our-describe*/
 
 .box{
@@ -578,9 +564,9 @@ display: flex;
 margin-bottom: 30px;
 width: 270px;
 height: 120px;
-color: #F5F4FA;
-border: 1px solid ;
-border: 4px;
+
+border: 1px solid white;
+border-radius: 4px;
 background-size:  border-box;
 align-items: center;
 
@@ -596,16 +582,18 @@ display: block;
 justify-content: space-between;
 }
 
-.icon-decr-1{
+.icon-antenna-1{
 height: 70px;
-background-image: url("./images/icon-decr-1.svg");
+background-image: url(./images/icon-antenna-1.svg);
 align-items: center;
 margin-top: 20px;
 }
 
 .box > .icon{
+  display: flex;
   background-repeat: no-repeat;
   gap: 30px;
+  align-items: center;
 }
 
 .icon-clock-1{
@@ -613,23 +601,22 @@ width: 65px;
 height: 70px;
 background-image: url("./images/icon-clock-1.svg");
 cursor: pointer;
-fill: #F5F4FA;
+fill:   ;
 }
 
-.icon-describe-3{
+.icon-diagram-13{
 width: 65px;
 height: 70px;
-background-image: url("./images/icon-describe-3.svg");
+background-image: url("./images/icon-diagram-1.svg");
 cursor: pointer;
-fill: #F5F4FA;
+
 }
 
 .icon-astronaut-1{
   margin-top: 20px;
   height: 70px;
-  background-image: url("./images/icon-astronaut-1.svg");
   cursor: pointer;
-  fill: #F5F4FA;
+  
 }
 
 .person{
@@ -710,22 +697,28 @@ align-items: center;
   background-color: var(--accent-color);
   color: #FFFFFF;
 }
+
 .namec{
   text-align: center;
 }
 
 .icons-link{
   display: flex;
-  padding: 12px;
   width: 44px;
   height: 44px;
+  padding: 12px;
+  fill: #AFB1B8;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
-.icon-instagram-2{
+.icon .icon-instagram-2{
   width: 20px;
   height: 20px;
-  background-image: url("./images/icon-instagram-2.svg");
+
   cursor: pointer;
   align-content: center;
   vertical-align: middle;
@@ -734,7 +727,7 @@ align-items: center;
 .icon-tvit{
   width: 20px;
   height: 20px;
-  background-image: url("./images/icon-tvit.svg");
+ 
   cursor: pointer;
   align-content: center;
   vertical-align: middle;
@@ -743,7 +736,7 @@ align-items: center;
 .icon-f{
   width: 20px;
   height: 20px;
-  background-image: url("./images/icon-f.svg");
+
   cursor: pointer;
   align-content: center;
   vertical-align: middle;
@@ -792,22 +785,16 @@ align-items: center;
 }
 
 .client-item{
-  display: flex;
-  margin: 0;
-  padding: 0;
   width: 170px;
   height: 92px;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 30px;
+
   color: #AFB1B8;
   border: 1px solid;
   border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
+
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  
 }
 
 .client-link{
