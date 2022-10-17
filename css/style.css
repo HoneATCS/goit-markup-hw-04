@@ -423,11 +423,6 @@ padding: 10px 32px;
 margin: 0;
 }
 
-.skills{
-display: flex;
-gap: 30px;
-}
-
 .title{
   margin-bottom: 10px;
 }
@@ -489,11 +484,12 @@ border-bottom: 1px solid #EEEEEE;
 .contacts-footer:not(:last-child){
 margin-bottom: 9px;
 }
+
 .contacts-footer{
 gap: 9px;
 }
- m
- address{
+
+.address{
 margin-top: 20px;
 }
 
@@ -531,7 +527,6 @@ margin-top: 20px;
   gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
-
 }
 
 .allabout{
@@ -539,16 +534,16 @@ margin-top: 20px;
 }
 
 .icon {
-  fill: currentColor;
-  background-size: contain;
+fill: currentColor;
 } 
 
-
-.link-mail > .icon-envelop{
+.link-mail > .icon-envelope{
 stroke: currentColor;
-fill: currentColor;
-background-repeat: no-repeat;
-align-items: center;
+margin-right: 10px;
+}
+
+.linktel > .icon-smartphone{
+stroke: currentColor;
 margin-right: 10px;
 
 }
@@ -564,17 +559,17 @@ display: flex;
 margin-bottom: 30px;
 width: 270px;
 height: 120px;
-
+background-color: #F5F4FA;
 border: 1px solid white;
 border-radius: 4px;
 background-size:  border-box;
 align-items: center;
-
+justify-content: center;
 } 
 
 .skills{
+  display: flex;
   gap: 30px;
-  align-items: center;
 }
 
 .list-skills{
@@ -583,46 +578,37 @@ justify-content: space-between;
 }
 
 .icon-antenna-1{
+width: 65px;
 height: 70px;
-background-image: url(./images/icon-antenna-1.svg);
 align-items: center;
-margin-top: 20px;
 }
 
 .box > .icon{
-  display: flex;
-  background-repeat: no-repeat;
-  gap: 30px;
-  align-items: center;
+display: flex;
+background-repeat: no-repeat;
+gap: 30px;
+align-items: center;
 }
 
 .icon-clock-1{
 width: 65px;
 height: 70px;
-background-image: url("./images/icon-clock-1.svg");
 cursor: pointer;
-fill:   ;
 }
 
-.icon-diagram-13{
-width: 65px;
-height: 70px;
-background-image: url("./images/icon-diagram-1.svg");
+.icon-diagram-1{
+width: 70px;
+height: 54px;
 cursor: pointer;
 
 }
 
 .icon-astronaut-1{
-  margin-top: 20px;
-  height: 70px;
-  cursor: pointer;
-  
+width: 70px;
+height: 70px;
+cursor: pointer;
 }
 
-.person{
-  box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
 
 
 /* section bg-herro*/
@@ -649,6 +635,12 @@ align-items: center;
 }
 
 /*Links for team*/
+
+.person {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .icons-cart-list{
   display: flex;
   text-decoration: none;
@@ -661,41 +653,35 @@ align-items: center;
 .icon-listc{
   display: flex;
   fill: #AFB1B8;
-  width: 44px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
+ 
 }
 .icons-link:hover,
 .icons-link:focus{
-  background-color: var(--accent-color);
-  color: #FFFFFF;
+background-color: var(--accent-color);
+fill: #FFFFFF;
 }
 
 .icons-link:hover .icon-instagram-2,
 .icons-link:focus .icon-instagram-2{
-  background-color: var(--accent-color);
-  color: #FFFFFF;
+background-color: var(--accent-color);
+fill: #FFFFFF;
 }
-.icons-link:hover .icon-tvit,
-.icons-link:focus .icon-tvit {
-  background-color: var(--accent-color);
-  color: #FFFFFF;
+.icons-link:hover .icon-twitter-1,
+.icons-link:focus .icon-twitter-1{
+background-color: var(--accent-color);
+fill: #FFFFFF;
 }
 
-.icons-link:hover .icon-f,
-.icons-link:focus .icon-f {
-  background-color: var(--accent-color);
-  color: #FFFFFF;
+.icons-link:hover .icon-facebook-1,
+.icons-link:focus .icon-facebook-1{
+background-color: var(--accent-color);
+fill:  #FFFFFF;
 }
 
 .icons-link:hover .icon-linkedin-1,
-.icons-link:focus .icon-linkedin-1 {
-  background-color: var(--accent-color);
-  color: #FFFFFF;
+.icons-link:focus .icon-linkedin-1{
+background-color: var(--accent-color);
+fill: #FFFFFF;
 }
 
 .namec{
@@ -724,7 +710,7 @@ align-items: center;
   vertical-align: middle;
   color: #AFB1B8;
 }
-.icon-tvit{
+.icon-twitter-1{
   width: 20px;
   height: 20px;
  
@@ -733,7 +719,8 @@ align-items: center;
   vertical-align: middle;
   color: #AFB1B8;
 }
-.icon-f{
+
+.icon-facebook-1{
   width: 20px;
   height: 20px;
 
@@ -791,14 +778,16 @@ align-items: center;
   color: #AFB1B8;
   border: 1px solid;
   border-radius: 4px;
-
-  align-items: center;
-  justify-content: center;
   
 }
 
 .client-link{
-  display: flex;
+display: flex;
+width: 170px;
+ height: 92px;
+color: #AFB1B8;
+border: 1px solid;
+border-radius: 4px;
   justify-content: center;
   align-items: center;
   width: 106px;
@@ -834,7 +823,7 @@ align-items: center;
   fill: var(--accent-color);
 }
 
-.icon-clients-1{
+.icon-Logo-1{
   width: 41px;
   background-image: url("./images/icon-clients-1.svg");
   cursor: pointer;
@@ -842,21 +831,21 @@ align-items: center;
   vertical-align: middle;
   fill: #AFB1B8;
 }
-.icon-clients-2{
+.icon-Logo-2{
   width: 40px;
   height: 52px;
   background-image: url("./images/icon-clients-2.svg");
   cursor: pointer;
   color: #AFB1B8;
 }
-.icon-group-3{
+.icon-Logo-3{
   width: 43,5px;
   height: 41px;
   background-image: url("./images/icon-group-3.svg");
   cursor: pointer;
   color: #AFB1B8;
 }
-.icon-group-2{
+.icon-Logo-4{
   width: 106px;
   height: 60px;
   background-image: url("./images/icon-group-2.svg");
@@ -867,18 +856,18 @@ align-items: center;
  
 }
 
-.icon-group-1{
+.icon-Logo-5{
   width: 62.54px;
   height: 45.43px;
-  background-image: url("./images/icon-group-.svg");
+  
   cursor: pointer;
-color: #AFB1B8;
+ color: #AFB1B8;
 }
 
-.icon-object-1{
-  width: 93.79px;
-  height: 43.93px;
-  background-image: url("./images/icon-object-1.svg");
+.icon-Logo{
+  width: 41px;
+  height: 46.7px;
+ background-size: contain;
   cursor: pointer;
   color: #AFB1B8;
 }
