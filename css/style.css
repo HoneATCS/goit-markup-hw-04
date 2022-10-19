@@ -766,115 +766,92 @@ fill: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
 }
-.client-item:hover,
-.client-item:focus{
-  color: var(--accent-color);
-}
 
 .client-item{
   width: 170px;
   height: 92px;
-
-  color: #AFB1B8;
-  border: 1px solid;
-  border-radius: 4px;
-  
 }
 
 .client-link{
 display: flex;
 width: 170px;
- height: 92px;
-color: #AFB1B8;
-border: 1px solid;
+height: 92px;
+border: 1px solid #AFB1B8;
 border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  width: 106px;
-  height: 60px;
-  
-  border-radius: 4px;
-  color: #AFB1B8;
+justify-content: center;
+align-items: center;
 }
 
 
-.client-link:hover .icon-clients-1,
-.client-link:focus .icon-clients-1{
+.client-link:hover .icon-Logo,
+.client-link:focus .icon-Logo{
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+ 
+}
+.client-link:hover .icon-Logo-1,
+.client-link:focus .icon-Logo-1{
   fill: var(--accent-color);
 }
-.client-link:hover .icon-clients-2,
-.client-link:focus .icon-clients-2 {
+.client-link:hover .icon-Logo-2,
+.client-link:focus .icon-Logo-2{
   fill: var(--accent-color);
 }
-.client-link:hover .icon-group-3,
-.client-link:focus .icon-group-3 {
+.client-link:hover .icon-Logo-3,
+.client-link:focus .icon-Logo-3 {
   fill: var(--accent-color);
 }
-.client-link:hover .icon-group-2,
-.client-link:focus .icon-group-2 {
+.client-link:hover .icon-Logo-4,
+.client-link:focus .icon-Logo-4 {
   fill: var(--accent-color);
 }
-.client-link:hover .icon-group-1,
-.client-link:focus .icon-group-1 {
-  fill: var(--accent-color);
-}
-.client-link:hover .icon-object-1,
-.client-link:focus .icon-object-1 {
+.client-link:hover .icon-Logo-5,
+.client-link:focus .icon-Logo-5 {
   fill: var(--accent-color);
 }
 
 .icon-Logo-1{
-  width: 41px;
-  background-image: url("./images/icon-clients-1.svg");
-  cursor: pointer;
-  align-content: center;
-  vertical-align: middle;
-  fill: #AFB1B8;
+width: 106px;
+height: 60px;
+cursor: pointer;
+fill: #AFB1B8;
 }
+
 .icon-Logo-2{
-  width: 40px;
-  height: 52px;
-  background-image: url("./images/icon-clients-2.svg");
-  cursor: pointer;
-  color: #AFB1B8;
+width: 106px;
+height: 60px;
+cursor: pointer;
+fill: #AFB1B8;
 }
+
 .icon-Logo-3{
-  width: 43,5px;
-  height: 41px;
-  background-image: url("./images/icon-group-3.svg");
-  cursor: pointer;
-  color: #AFB1B8;
+width: 106px;
+height: 60px;
+cursor: pointer;
+fill: #AFB1B8;
 }
+
 .icon-Logo-4{
-  width: 106px;
-  height: 60px;
-  background-image: url("./images/icon-group-2.svg");
-  cursor: pointer;
-  fcolor: #AFB1B8;
-  align-items: center;
-  text-align: center;
- 
+width: 106px;
+height: 60px;
+fill: #AFB1B8;
 }
 
 .icon-Logo-5{
-  width: 62.54px;
-  height: 45.43px;
-  
-  cursor: pointer;
- color: #AFB1B8;
+width: 106px;
+height: 60px;
+cursor: pointer;
+fill: #AFB1B8;
 }
 
 .icon-Logo{
-  width: 41px;
-  height: 46.7px;
- background-size: contain;
-  cursor: pointer;
-  color: #AFB1B8;
+width: 106px;
+height: 60px;
+cursor: pointer;
+fill: #AFB1B8;
 }
 
-
 /*footer-icons*/
-
 
 .footer-fortwo{
   display: flex;
@@ -883,12 +860,11 @@ border-radius: 4px;
 .conection{
   margin-left: 15px;
   margin-right: 15px;
-  
 }
 
 .footer-icons-link{
 padding-left: 72px;
-align-items:baseline;
+align-items: baseline;
 }
 
 .foter-link-title{
@@ -934,38 +910,32 @@ text-align: center;
   justify-content: center;
   fill:  #AFB1B8;
 }
+
 .footer-link-item:hover{
 background-color: var(--accent-color);
 } 
 
-.icon-instagram-footer{
- width: 20px;
- height: 20px;
-background-image: url("../images/icon-instagram-footer.svg");
+.f-s-link .icon-instagram-2{
+width: 20px;
+height: 20px;
 cursor: pointer;
 fill: #F5F4FA;
-
 }
 
-.icon-tvit-footer{
+.f-s-link .icon-twitter-1{
 width: 20px;
 height: 16,5px;
-background-image: url("../images/icon-tvit-footer.svg");
 cursor: pointer;
 fill: #F5F4FA;
-
 }
 
-.icon-facebook-footer{
-background-image: url("../images/icon-facebook-footer.svg");
+.f-s-link .icon-facebook-1{
 height: 20px;
 fill: #F5F4FA;
 cursor: pointer;
-
 }
 
-.icon-linkedin-footer{
-background-image: url("../images/icon-linkedin-footer.svg");
+.f-s-link .icon-linkedin-1{
 height: 20px;
 cursor: pointer;
 fill: #F5F4FA;
