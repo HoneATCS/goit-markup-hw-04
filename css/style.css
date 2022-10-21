@@ -49,7 +49,9 @@ li {
 }
 
 .linktel:hover,
+.linktel:focus,
 .linktel-s:hover,
+.linktel-s:focus,
 .link-mail:hover,
 .link-mail:focus,
 .site-nav-list > .link:hover,
@@ -182,7 +184,7 @@ li {
 .list-buttons .but:focus {
   color: #ffffff;
   background-color: var(--accent-color);
-  cursor: pointer;
+  
 }
 .visually-hidden {
   position: absolute;
@@ -208,6 +210,7 @@ li {
   text-decoration: none;
   border-color: transparent;
   padding: 6px 25px;
+  cursor: pointer;
 }
 
 .but {
@@ -222,6 +225,7 @@ li {
   text-decoration: none;
   border-color: transparent;
   padding: 6px 22px;
+  cursor: pointer;
 }
 
 .carts {
@@ -256,6 +260,7 @@ padding-bottom: 30px;
   text-decoration: none;
 }
 .pcarts{
+  display: block;
   text-decoration: none;
 }
 .footer{
@@ -275,7 +280,7 @@ padding-bottom: 30px;
   color: var(--primary-white-color);
   list-style: none;
   text-decoration: none;
-  padding-bottom: 20px;
+  
 }
 
 .list-adres:hover,
@@ -296,7 +301,7 @@ padding-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   text-decoration: none;
-  padding-top: 20px;
+  
 }
 
 .list-mail,
@@ -391,7 +396,7 @@ header > .container{
 .link,
 .link-p{
   display: flex;
-  padding: 32px 0;
+  
 }
 
 .contacts-list-h{
@@ -402,7 +407,7 @@ margin-left: auto;
 .link-mail,
 .linktel{
   display: flex;
-  padding: 32px 0;
+  margin: 32px 0;
   align-items: center;
 }
 
@@ -608,7 +613,6 @@ width: 70px;
 height: 70px;
 cursor: pointer;
 }
-
 
 
 /* section bg-herro*/
@@ -852,14 +856,16 @@ fill: #AFB1B8;
   display: flex;
   align-items: baseline;
   margin: 0 auto;
+  align-items: baseline;
 }
-.u{
-margin-top: 20px;
+
+.addresfoot{
+  margin-top: 20px;
 }
 
 .footer-icons-link{
-padding-left: 72px;
-align-items: baseline;
+margin-left: 72px;
+
 }
 
 .foter-link-title{
@@ -943,15 +949,18 @@ width: 20px;
 
 .butone:hover,
 .but:hover{ 
-box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12), 2px 0px 1px rgba(0, 0, 0, 0.08), 1px 0px 3px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*Тінь карток*/
 
 .pcarts:hover{
- display: block;
-  background: #FFFFFF;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.16), 
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.12);
+}
+.pcarts:focus{
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.12);
 }
