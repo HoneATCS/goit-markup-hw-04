@@ -395,12 +395,16 @@ header > .container{
 .link,
 .link-p{
   display: flex;
+  padding: 32px 0;
 }
 
+.link-s:hover,
 .link-s:focus,
+.link:hover,
 .link:focus,
+.link-p:hover,
 .link-p:focus{
-  display: flex;
+  color: var(--accent-color);
 }
 
 .contacts-list-h{
@@ -585,7 +589,7 @@ justify-content: space-between;
 }
 
 .icon-antenna-1{
-width: 65px;
+width: 70px;
 height: 70px;
 align-items: center;
 }
@@ -598,14 +602,14 @@ align-items: center;
 }
 
 .icon-clock-1{
-width: 65px;
+width: 70px;
 height: 70px;
 cursor: pointer;
 }
 
 .icon-diagram-1{
 width: 70px;
-height: 54px;
+height: 70px;
 cursor: pointer;
 
 }
@@ -857,6 +861,7 @@ fill: #AFB1B8;
   display: flex;
   align-items: baseline;
   margin: 0 auto;
+  padding: 0 15px;
   align-items: baseline;
 }
 
