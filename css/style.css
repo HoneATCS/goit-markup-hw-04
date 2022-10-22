@@ -389,14 +389,18 @@ header > .container{
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  
-  }
+}
 
 .link-s,
 .link,
 .link-p{
   display: flex;
-  
+}
+
+.link-s:focus,
+.link:focus,
+.link-p:focus{
+  display: flex;
 }
 
 .contacts-list-h{
@@ -406,9 +410,9 @@ margin-left: auto;
 
 .link-mail,
 .linktel{
-  display: flex;
-  margin: 32px 0;
-  align-items: center;
+display: flex;
+padding: 32px 0;
+align-items: center;
 }
 
 .bg-hero{
@@ -433,6 +437,7 @@ margin: 0;
 .title{
   margin-bottom: 10px;
 }
+
 .list-skills{
 flex-basis: calc((100% - 3 * 30px)) / 4;
 max-width: 270px;
@@ -444,7 +449,6 @@ max-width: 270px;
   margin-top: 50px;
 }
  
-
 .our-describe{
 padding-top: 94px;
 padding-bottom: 47px;
@@ -499,43 +503,42 @@ margin-top: 20px;
 }
 
 .card-set{
-  gap: 30px;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
+gap: 30px;
+display: flex;
+justify-content: center;
+text-decoration: none;
 }
 
 .person{
-  text-align: center;
+text-align: center;
 }
 
 .team{
-  padding-top: 94px;
-  padding-bottom: 94px;
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .footerlist{
-  padding-left: 30px;
+padding-left: 30px;
 }
 
 .footer{
- background-color: var(--bg-herro);
+background-color: var(--bg-herro);
 }
 
 .person-work{
-  margin-top: 10px;
-  
+margin-top: 10px; 
 }
 
 .list-buttons{
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+display: flex;
+gap: 8px;
+justify-content: center;
+margin-bottom: 50px;
 }
 
 .allabout{
-  padding: 94px 0;
+padding: 94px 0;
 }
 
 .icon {
@@ -550,7 +553,6 @@ margin-right: 10px;
 .linktel > .icon-smartphone{
 stroke: currentColor;
 margin-right: 10px;
-
 }
 
 .icon-smartphone:link:hover.icon{
@@ -573,8 +575,8 @@ justify-content: center;
 } 
 
 .skills{
-  display: flex;
-  gap: 30px;
+display: flex;
+gap: 30px;
 }
 
 .list-skills{
@@ -613,7 +615,6 @@ width: 70px;
 height: 70px;
 cursor: pointer;
 }
-
 
 /* section bg-herro*/
 
@@ -909,37 +910,40 @@ justify-content: center;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  fill:  #AFB1B8;
+  fill:  #FFFFFF;
 }
 
 .f-s-link:hover{
 background-color: var(--accent-color);
 } 
 
+.f-s-link:focus {
+  background-color: var(--accent-color);
+}
+
 .f-s-link .icon-instagram-2{
 width: 20px;
 height: 20px;
 cursor: pointer;
-fill: #F5F4FA;
+fill: #FFFFFF;
 }
 
 .f-s-link .icon-twitter-1{
 width: 20px;
-height: 16,5px;
 cursor: pointer;
-fill: #F5F4FA;
+fill: #FFFFFF;
 }
 
 .f-s-link .icon-facebook-1{
 height: 20px;
-fill: #F5F4FA;
+fill: #FFFFFF;
 cursor: pointer;
 }
 
 .f-s-link .icon-linkedin-1{
 height: 20px;
 cursor: pointer;
-fill: #F5F4FA;
+fill: #FFFFFF;
 width: 20px;
 
 }
@@ -950,6 +954,11 @@ width: 20px;
 .butone:hover,
 .but:hover{ 
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.butone:focus,
+.but:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*Тінь карток*/
